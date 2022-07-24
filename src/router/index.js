@@ -345,6 +345,17 @@ export const asyncRoutes = [
     component: () => import('@/views/pdf/download'),
     hidden: true
   },
+  {
+    path: '/my',
+    component: Layout,
+    redirect: '/my/index',
+    children: []
+  },
+  {
+    path: '/pdf/download',
+    component: () => import('@/views/pdf/download'),
+    hidden: true
+  },
 
   {
     path: '/theme',
@@ -371,7 +382,6 @@ export const asyncRoutes = [
       }
     ]
   },
-
   {
     path: 'external-link',
     component: Layout,
